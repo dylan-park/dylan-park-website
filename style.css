@@ -141,6 +141,7 @@ body {
 }
 
 .skill-card {
+	position: relative;
 	background: #f8f9fa;
 	padding: 1.5rem;
 	border-radius: 12px;
@@ -162,6 +163,31 @@ body {
 .skill-card p {
 	color: #666;
 	font-size: 0.95rem;
+}
+
+.skill-card a:not(.card-link) {
+	position: relative;
+	z-index: 2;
+	color: #8e44ad;
+}
+
+.skill-card a:not(.card-link):visited {
+    color: #8e44ad;
+}
+
+.card-link {
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+}
+
+.project-card {
+	cursor: pointer;
+	pointer-events: none;
+}
+
+.project-card a {
+	pointer-events: auto;
 }
 
 .highlight-box {
